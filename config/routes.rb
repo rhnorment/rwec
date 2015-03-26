@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
 
+  root      'pages#home'
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  root      'pages#home'
 
   get       'about'           =>    'pages#about'
   get       'leadership'      =>    'pages#leadership'
