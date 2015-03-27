@@ -3,4 +3,7 @@
   <data-source name="Rails rwec: development" uuid="2e8e1bd8-d1bd-4b49-ac76-b590a0ea22d4">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
+  <data-source name="Rails rwec: test" uuid="b7772816-f247-49c0-954f-6917f4df93c8">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
 </component>
