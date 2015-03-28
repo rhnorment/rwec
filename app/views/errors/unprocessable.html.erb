@@ -1,2 +1,7 @@
-<h1>Errors#unprocessable</h1>
-<p>Find me in app/views/errors/unprocessable.html.erb</p>
+<div class="error-box well">
+
+  <%= content_tag :h2, @message, class:'text-warning font-thin text-center m-t-xl m-b-xl' %>
+
+  <%= content_tag :p, link_to('OK', root_path, class:'btn btn-primary btn-lg'), class:'text-center' %>
+
+</div>

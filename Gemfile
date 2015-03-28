@@ -17,10 +17,10 @@ gem 'jquery-turbolinks'
 gem 'devise'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'pg_search'
+gem 'infusionsoft'
 
 # helper gems:
 gem 'font-awesome-sass'
-gem 'bootstrap_form'
 gem 'kaminari'
 gem 'holder_rails'
 
