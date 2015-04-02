@@ -17,3 +17,5 @@
 
 # Ignore RubyMine files
 /.idea
+spec/controllers/pages_controller_spec.rb
+spec/features/exception_handling_spec.rb
