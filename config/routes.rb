@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
 
   get       '/about'          =>    'pages#about'
+  get       '/about/faq'      =>    'pages#faq'
+  get       '/contact'        =>    'pages#contact'
   get       '/leadership'     =>    'pages#leadership'
   get       '/purpose'        =>    'pages#purpose'
   get       '/accreditation'  =>    'pages#accreditation'

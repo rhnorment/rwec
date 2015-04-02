@@ -1,0 +1,47 @@
+<div class="top-bar">
+
+    <div class="container">
+
+        <ul class="social-icons col-md-6 col-sm-6 col-xs-12 hidden-xs m-t-xs">
+            <%= content_tag :li, link_to(icon('twitter'), "#") %>
+            <%= content_tag :li, link_to(icon('facebook'), "#") %>
+            <%= content_tag :li, link_to(icon('youtube'), "#") %>
+            <%= content_tag :li, link_to(icon('linkedin'), "#") %>
+            <%= content_tag :li, link_to(icon('google-plus'), "#") %>
+        </ul>
+
+        <form class="pull-right search-form" role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search the site...">
+            </div>
+            <button type="submit" class="btn btn-theme">Go</button>
+        </form>     <!-- TODO:  IMPLEMENT SEARCH GEM -->
+
+    </div>
+
+</div>
+
+<div class="header-main container">
+
+    <h1 class="logo col-md-4 col-sm-4">
+        <%= link_to 'Rivendell', root_path %>
+    </h1>
+
+    <div class="info col-md-8 col-sm-8">
+
+        <ul class="menu-top navbar-right hidden-xs">
+            <%= content_tag :li, link_to('Home', root_path), class:'divider' %>
+            <%= content_tag :li, link_to('FAQ', about_faq_path), class:'divider' %>  <!-- TODO: FAQ PAGE -->
+            <%= content_tag :li, link_to('Contact', contact_path) %>   <!-- TODO: CONTACT PAGE -->
+        </ul>
+
+        <%= tag :br %>
+
+        <div class="contact pull-right">
+            <%= content_tag :p, icon('phone', 'Call us today 0800 123 4567'), class:'phone' %>    <!-- TODO: PHONE -->
+            <%= content_tag :p, icon('envelope', 'inquiries@rivendell.com'), class:'email' %>     <!-- TODO: EMAIL -->
+        </div>
+
+    </div>
+
+</div>
