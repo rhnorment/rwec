@@ -8,7 +8,6 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'bootstrap-sass'
-gem 'pg'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'jquery-turbolinks'
@@ -24,6 +23,10 @@ gem 'font-awesome-sass'
 gem 'kaminari'
 gem 'holder_rails'
 
+group :development do
+  gem 'sqlite3'
+end
+
 # test gems:
 group :test do
   gem 'capybara'
@@ -38,5 +41,6 @@ end
 # production gems:
 group :production do
   gem 'rails_12factor'
+  gem 'pg'
 end
 
