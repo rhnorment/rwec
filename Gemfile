@@ -22,6 +22,7 @@ gem 'infusionsoft'
 gem 'font-awesome-sass'
 gem 'kaminari'
 gem 'holder_rails'
+gem 'copycopter_client', '~> 2.0.1'
 
 group :development do
   gem 'sqlite3'
