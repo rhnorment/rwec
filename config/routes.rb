@@ -2,21 +2,17 @@ Rails.application.routes.draw do
 
   root      'pages#home'
 
-  devise_for :admin_users, ActiveAdmin::Devise.config
-  ActiveAdmin.routes(self)
+  get       '/about',                 to:     'pages#about'
+  get       '/contact',               to:     'pages#contact'
+  get       '/about/leadership',      to:     'pages#leadership'
+  get       '/about/purpose',         to:     'pages#purpose'
+  get       '/about/accreditation',   to:     'pages#accreditation'
+  get       '/locations',             to:     'pages#locations'
+  get       '/investors',             to:     'pages#investors'
+  get       '/contact',               to:     'pages#contact'
 
-  get       '/about'          =>    'pages#about'
-  get       '/about/faq'      =>    'pages#faq'
-  get       '/contact'        =>    'pages#contact'
-  get       '/leadership'     =>    'pages#leadership'
-  get       '/purpose'        =>    'pages#purpose'
-  get       '/accreditation'  =>    'pages#accreditation'
-  get       '/locations'      =>    'pages#locations'
-  get       '/investors'      =>    'pages#investors'
-
-  get       '/404'            =>    'errors#not_found'
-  get       '/422'            =>    'errors#unprocessable'
-  get       '/500'            =>    'errors#server_error'
-
+  get       '/404',                   to:     'errors#not_found'
+  get       '/422',                   to:     'errors#unprocessable'
+  get       '/500',                   to:     'errors#server_error'
 
 end

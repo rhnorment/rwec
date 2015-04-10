@@ -13,16 +13,12 @@ gem 'jbuilder', '~> 2.0'
 gem 'jquery-turbolinks'
 
 # application gems
-gem 'devise'
-gem 'activeadmin', github: 'gregbell/active_admin'
-gem 'pg_search'
-gem 'infusionsoft'
 
 # helper gems:
 gem 'font-awesome-sass'
 gem 'kaminari'
 gem 'holder_rails'
-gem 'copycopter_client', '~> 2.0.1'
+gem 'nav_lynx'
 
 group :development do
   gem 'sqlite3'
