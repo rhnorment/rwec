@@ -1,2 +1,51 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<!-- FLEX SLIDER -->
+<div id="promo-slider" class="slider flexslider">
+  <ul class="slides">
+    <li>
+      <%= holder_tag '1132x350' %>
+      <p class="flex-caption">
+        <%= content_tag :span, 'Seeking knowledge', class:'main' %>
+        <%= tag :br %>
+        <%= content_tag :span, 'We are seeking some serious knowledge.', class:'secondary clearfix' %>
+      </p>
+    </li>
+
+    <li>
+      <%= holder_tag '1132x350' %>
+      <p class="flex-caption">
+        <%= content_tag :span, 'Building character', class:'main' %>
+        <%= tag :br %>
+        <%= content_tag :span, 'We are building some serious character.', class:'secondary clearfix' %>
+      </p>
+    </li>
+
+    <li>
+      <%= holder_tag '1132x350' %>
+      <p class="flex-caption">
+        <%= content_tag :span, 'Students of Honor', class:'main' %>
+        <%= tag :br %>
+        <%= content_tag :span, 'Our students are just plain honorable.', class:'secondary clearfix' %>
+      </p>
+    </li>
+  </ul>
+</div>
+
+<!-- PROMO BOX -->
+<section class="promo box box-dark">
+  <div class="col-md-9">
+    <h1 class="section-heading">We are changing education in America.</h1>
+    <p>
+      We are seriously in need of some freedom so we can learn to be students of honor, as well as mothers and fathers of honor.
+    </p>
+  </div>
+
+  <div class="col-md-3">
+    <%= link_to contact_path, class:'btn btn-cta' do %>
+        <%= icon('play-circle') %>
+        Contact us
+    <% end %>
+  </div>
+</section>
+
+
+
