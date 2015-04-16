@@ -14,12 +14,26 @@
 
  */
 
+/* modules */
+@import 'modules/mixins';
+@import 'modules/elements';
+
+/* vendor */
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import 'bootstrap-overrides';
 @import "font-awesome-sprockets";
 @import "font-awesome";
-@import 'base';
-@import 'home';
-@import 'responsive';
+
+/* config variables */
+@import 'partials/config';
+
+/* layouts */
+@import 'partials/layout';
+
+/* pages */
+@import 'partials/pages/index';
+
+
 
 

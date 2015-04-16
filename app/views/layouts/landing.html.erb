@@ -10,30 +10,7 @@
 
 <body class="home-page">
 
-    <div class="wrapper">
-
-        <!-- HEADER -->
-        <header class="header">
-            <%= render 'layouts/header' %>
-        </header>
-
-        <!-- NAV -->
-        <nav class="main-nav" role="navigation">
-            <%= render 'layouts/main_nav' %>
-        </nav>
-
-        <!-- CONTENT -->
-        <div class="content container">
-
-          <%= yield %>
-
-        </div>
-
-    </div>
-
-    <footer class="footer">
-        <%= render 'layouts/footer' %>
-    </footer>
+    <%= yield %>
 
 </body>
 
