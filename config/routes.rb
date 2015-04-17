@@ -2,16 +2,15 @@ Rails.application.routes.draw do
 
   root      'pages#home'
 
-  get       '/about',                 to:     'pages#about'
-  get       '/about/leadership',      to:     'pages#leadership'
   get       '/about/objectives',      to:     'pages#objectives'
+  get       '/about/leadership',      to:     'pages#leadership'
   get       '/about/investors',       to:     'pages#investors'
 
   get       '/program',               to:     'pages#program'
   get       '/program/curriculum',    to:     'pages#curriculum'
   get       '/program/locations',     to:     'pages#locations'
 
-  get       '/expansion',             to:     'pages#expansion'
+  get       '/opportunities',         to:     'pages#opportunities'
 
   get       '/contact',               to:     'pages#contact'
 

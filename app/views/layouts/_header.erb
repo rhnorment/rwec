@@ -4,17 +4,41 @@
     <span class="icon-bar"></span>
     <span class="icon-bar"></span>
   </button>
-  <%= link_to 'Rivendell Education Company', root_path, class:'navbar-brand' %>
+  <%= link_to @company_name, root_path, class:'navbar-brand' %>
 </div>
 
 <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
 
     <ul class="nav navbar-nav navbar-right">
 
+        <!-- ABOUT US MENU SECTION -->
+        <li class="dropdown">
+          <%= link_to '#', class:'dropdown-toggle', data: { toggle:'dropdown' } do %>
+            About us <%= tag :b, class:'caret' %>
+          <% end %>
+          <ul class="dropdown-menu">
+            <%= content_tag :li, link_to('Our objectives', about_objectives_path) %>
+            <%= content_tag :li, link_to('Leadership', about_leadership_path) %>
+            <%= content_tag :li, link_to('Leadership', about_investors_path) %>
+          </ul>
+        </li>
 
+        <!-- PROGRAM MENU SECTION -->
+        <li class="dropdown">
+          <%= link_to '#', class:'dropdown-toggle', data: { toggle:'dropdown' } do %>
+              Our Program <%= tag :b, class:'caret' %>
+          <% end %>
+          <ul class="dropdown-menu">
+            <%= content_tag :li, link_to('Rivendell Program', program_path) %>
+            <%= content_tag :li, link_to('Curriculum', program_curriculum_path) %>
+            <%= content_tag :li, link_to('Locations', program_locations_path) %>
+          </ul>
+        </li>
+
+        <%= content_tag :li, link_to('Opportunities', opportunities_path) %>
+
+        <%= content_tag :li, link_to('Contact us', contact_path) %>
 
     </ul>
-
-
 
 </nav>

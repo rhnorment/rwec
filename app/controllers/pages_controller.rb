@@ -32,7 +32,7 @@ class PagesController < ApplicationController
     @page_title = 'Our locations'
   end
 
-  def expansion
+  def opportunities
 
   end
 
