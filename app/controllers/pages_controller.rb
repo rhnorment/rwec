@@ -33,7 +33,12 @@ class PagesController < ApplicationController
   end
 
   def opportunities
+  end
 
+  def how_it_works
+  end
+
+  def apply
   end
 
   def contact
