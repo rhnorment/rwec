@@ -12,20 +12,28 @@ class PagesController < ApplicationController
     @page_title = 'Leadership'
   end
 
-  def purpose
-    @page_title = 'Our purpose'
+  def objectives
+    @page_title = 'Our objectives'
   end
 
-  def accreditation
-    @page_title = 'Accreditation'
+  def investors
+    @page_title = 'Investors'
+  end
+
+  def program
+
+  end
+
+  def curriculum
+
   end
 
   def locations
     @page_title = 'Our locations'
   end
 
-  def investors
-    @page_title = 'Investors'
+  def expansion
+
   end
 
   def contact

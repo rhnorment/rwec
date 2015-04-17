@@ -3,12 +3,16 @@ Rails.application.routes.draw do
   root      'pages#home'
 
   get       '/about',                 to:     'pages#about'
-  get       '/contact',               to:     'pages#contact'
   get       '/about/leadership',      to:     'pages#leadership'
-  get       '/about/purpose',         to:     'pages#purpose'
-  get       '/about/accreditation',   to:     'pages#accreditation'
-  get       '/locations',             to:     'pages#locations'
-  get       '/investors',             to:     'pages#investors'
+  get       '/about/objectives',      to:     'pages#objectives'
+  get       '/about/investors',       to:     'pages#investors'
+
+  get       '/program',               to:     'pages#program'
+  get       '/program/curriculum',    to:     'pages#curriculum'
+  get       '/program/locations',     to:     'pages#locations'
+
+  get       '/expansion',             to:     'pages#expansion'
+
   get       '/contact',               to:     'pages#contact'
 
   get       '/404',                   to:     'errors#not_found'
