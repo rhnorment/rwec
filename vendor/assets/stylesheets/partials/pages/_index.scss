@@ -7,7 +7,7 @@
 		overflow: hidden;
 		background: #4B4848;
 		background-size: cover;
-	  	background-image: image_url('bg3.png');
+	  	background-image: url("http://farm9.staticflickr.com/8222/8254861601_1fbf969a14_b.jpg");
 		background-position: center 16%;
 		height: 580px;
 		position: relative;
@@ -160,7 +160,7 @@
 		
 		.header {
 			text-align: center;
-			font-family: $lato;
+			font-family: Lato;
 
 			@media (max-width: 991px) {
 				margin-bottom: 25px;
