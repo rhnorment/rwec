@@ -27,7 +27,7 @@
 
     <div class="row header">
       <div class="col-md-12">
-        <h2>Want to transform your community?</h2>
+        <h2>We help transform communities.</h2>
         <p>
           A Rivendell program in your community equips your young people with tools they need to help
           build a thriving community.
@@ -72,12 +72,49 @@
   <div class="container">
     <div class="row header">
       <div class="col-md-12">
-        <h3>Three models for bringing Rivendell to your community:</h3>
+        <h3>Three ways to bring Rivendell to your community:</h3>
       </div>
     </div>
     <div class="row charts">
-      <div class="col-md-4">
 
+      <div class="col-md-4">
+        <div class="chart first">
+            <div class="quantity">
+              <%= content_tag :span, '$', class:'dollar' %>
+              <%= content_tag :span, '500', class:'price' %> <br />
+              <%= content_tag :span, 'per student/semester', class:'period' %>
+            </div>
+            <%= content_tag :div, 'High School AA', class:'plan-name' %>
+            <div class="specs">
+            </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="chart featured">
+          <%= content_tag :div, 'Most popular', class:'popular' %>
+          <div class="quantity">
+            <%= content_tag :span, '$', class:'dollar' %>
+            <%= content_tag :span, '1,500', class:'price' %> <br />
+            <%= content_tag :span, 'per student/semester', class:'period' %>
+          </div>
+          <%= content_tag :div, 'Foundations AA', class:'plan-name' %>
+          <div class="specs">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="chart last">
+          <div class="quantity">
+            <%= content_tag :span, '$', class:'dollar' %>
+            <%= content_tag :span, '2,500', class:'price' %> <br />
+            <%= content_tag :span, 'per student/semester', class:'period' %>
+          </div>
+          <%= content_tag :div, 'Foundations BA', class:'plan-name' %>
+          <div class="specs">
+          </div>
+        </div>
       </div>
 
     </div>
