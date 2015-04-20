@@ -2,17 +2,20 @@ Rails.application.routes.draw do
 
   root      'pages#home'
 
+  get       '/about/mission_vision',        to:     'pages#mission_vision'
   get       '/about/objectives',            to:     'pages#objectives'
   get       '/about/leadership',            to:     'pages#leadership'
   get       '/about/investors',             to:     'pages#investors'
 
-  get       '/program',                     to:     'pages#program'
-  get       '/program/curriculum',          to:     'pages#curriculum'
-  get       '/program/locations',           to:     'pages#locations'
+  get       '/solutions/high_school',       to:     'pages#high_school'
+  get       '/solutions/college_aa',        to:     'pages#college_aa'
+  get       '/solutions/college_ba',        to:     'pages#college_ba'
 
-  get       '/opportunities',               to:     'pages#opportunities'
+  get       '/products/curriculum',         to:     'pages#opportunities'
+
   get       '/opportunities/how_it_works',  to:     'pages#how_it_works'
-  get       '/opportunities/application',   to:     'pages#application'
+  get       '/opportunities/customers',     to:     'pages#customers'
+  get       '/opportunities/partners',      to:     'pages#partners'
 
   get       '/contact',                     to:     'pages#contact'
 

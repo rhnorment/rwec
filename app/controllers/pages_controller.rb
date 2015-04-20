@@ -4,41 +4,37 @@ class PagesController < ApplicationController
     render layout: 'landing'
   end
 
-  def about
-    @page_title = 'About us'
+  def mission_vision
   end
 
   def leadership
-    @page_title = 'Leadership'
   end
 
   def objectives
-    @page_title = 'Our objectives'
   end
 
   def investors
-    @page_title = 'Investors'
   end
 
-  def program
+  def high_school
+  end
 
+  def college_aa
+  end
+
+  def college_ba
   end
 
   def curriculum
-
-  end
-
-  def locations
-    @page_title = 'Our locations'
-  end
-
-  def opportunities
   end
 
   def how_it_works
   end
 
-  def apply
+  def customers
+  end
+
+  def partners
   end
 
   def contact
