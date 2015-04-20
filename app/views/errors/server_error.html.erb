@@ -1,7 +1,7 @@
-<div class="error-box well">
+<h1>Whoops!</h1>
 
-  <%= content_tag :h2, @message, class:'text-warning font-thin text-center m-t-xl m-b-xl' %>
+<p>Monkeys have invaded our servers.  Please try again momentarily.</p>
 
-  <%= content_tag :p, link_to('OK', root_path, class:'btn btn-primary btn-lg'), class:'text-center' %>
-
-</div>
+<p class="go-back">
+  <%= link_to 'Click here to go back', :back %>
+</p>

@@ -1,7 +1,8 @@
-<div class="error-box well">
+<h1>Whoops!</h1>
 
-  <%= content_tag :h2, @message, class:'text-warning font-thin text-center m-t-xl m-b-xl' %>
+<p>This is an unprocessable entity.</p>
 
-  <%= content_tag :p, link_to('OK', root_path, class:'btn btn-primary btn-lg'), class:'text-center' %>
+<p class="go-back">
+  <%= link_to 'Click here to go back', :back %>
+</p>
 
-</div>
