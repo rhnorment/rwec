@@ -44,7 +44,7 @@
         </p>
       </div>
       <div class="col-md-6 image" %>
-        <%= holder_tag '402x242', '5 disciplines image', {}, class:'img-responsive' %>
+        <%= holder_tag '402x242', '5 disciplines image 402x242', {}, class:'img-responsive' %>
       </div>
     </div>
 
@@ -59,7 +59,7 @@
         </p>
       </div>
       <div class="col-md-6 image" %>
-        <%= holder_tag '371x246', 'business model image', {}, class:'img-responsive' %>
+        <%= holder_tag '371x246', 'business model image 371x246', {}, class:'img-responsive' %>
       </div>
     </div>
 
@@ -79,26 +79,69 @@
 
       <div class="col-md-4">
         <div class="chart first">
-            <%= content_tag :div, 'High School AA', class:'plan-name' %>
+            <%= content_tag :div, @solution_1_name, class:'plan-name' %>
             <div class="specs">
+              <div class="spec">
+                <%= content_tag :span, 'AA', class:'variable' %>
+                degree
+              </div>
+              <div class="spec">
+                <%= content_tag :span, 'Foundations', class:'variable' %>
+                for life
+              </div>
             </div>
+          <%= link_to content_tag(:span, 'Learn more'), solutions_high_school_path, class:'btn-signup button-clear' %>
         </div>
       </div>
 
       <div class="col-md-4">
         <div class="chart featured">
           <%= content_tag :div, 'Most popular', class:'popular' %>
-          <%= content_tag :div, 'Foundations AA', class:'plan-name' %>
+          <%= content_tag :div, @solution_2_name, class:'plan-name' %>
           <div class="specs">
+            <div class="spec">
+              <%= content_tag :span, 'AA', class:'variable' %>
+              degree
+            </div>
+            <div class="spec">
+              <%= content_tag :span, '16', class:'variable' %>
+              months to complete
+            </div>
+            <div class="spec">
+              <%= content_tag :span, 'Foundations', class:'variable' %>
+              for life
+            </div>
+            <div class="spec">
+              <%= content_tag :span, 'Study abroad', class:'variable' %>
+              included
+            </div>
           </div>
+          <%= link_to content_tag(:span, 'Learn more'), solutions_college_aa_path, class:'btn-signup button-clear' %>
         </div>
       </div>
 
       <div class="col-md-4">
         <div class="chart last">
-          <%= content_tag :div, 'Foundations BA', class:'plan-name' %>
+          <%= content_tag :div, @solution_3_name, class:'plan-name' %>
           <div class="specs">
+            <div class="spec">
+              <%= content_tag :span, 'BA', class:'variable' %>
+              degree
+            </div>
+            <div class="spec">
+              <%= content_tag :span, '24', class:'variable' %>
+              months to complete
+            </div>
+            <div class="spec">
+              <%= content_tag :span, 'Foundations', class:'variable' %>
+              for life
+            </div>
+            <div class="spec">
+              <%= content_tag :span, 'Study abroad', class:'variable' %>
+              included
+            </div>
           </div>
+          <%= link_to content_tag(:span, 'Learn more'), solutions_college_ba_path, class:'btn-signup button-clear' %>
         </div>
       </div>
 
@@ -106,4 +149,117 @@
 
   </div>
 
+</div>
+
+<div id="slider">
+  <div class="container">
+
+    <div class="row header">
+      <div class="col-md-12">
+        <h3>Includes training and knowledge sharing by experts around the world.</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 slide-wrapper">
+
+        <div class="slideshow">
+          <%= content_tag :div, nil, class:'btn-nav prev' %>
+          <%= content_tag :div, nil, class:'btn-nav next' %>
+          <div class="slide active">
+            <%= image_tag 'slider/slide1.png' %>
+          </div>
+          <div class="slide">
+            <%= image_tag 'slider/slide2.png' %>
+          </div>
+          <div class="slide">
+            <%= image_tag 'slider/slide3.png' %>
+          </div>
+          <div class="slide">
+            <%= image_tag 'slider/slide4.png' %>
+          </div>
+          <div class="slide">
+            <%= image_tag 'slider/slide5.png' %>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="testimonials">
+  <div class="container">
+
+    <div class="row header">
+      <div class="col-md-12">
+        <h3>Recommended by Christian leaders globally:</h3>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-sm-6">
+        <div class="testimonial pull-right">
+          <div class="quote">
+            Rivendell is the greatest thing to every happen to higher education.  No one builds students
+            of honor like we do.  We are the greatest honors program in the history of Bloomington, MN.
+            <div class="arrow-down">
+              <%= content_tag :div, nil, class:'arrow' %>
+              <%= content_tag :div, nil, class:'arrow-border' %>
+            </div>
+          </div>
+          <div class="author">
+            <%= image_tag 'RandySims_bw1.jpg', class:'pic' %>
+            <%= content_tag :div, 'Randy Sims', class:'name' %>
+            <%= content_tag :div, 'Worldview Academy', class:'company' %>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <div class="testimonial">
+          <div class="quote">
+            Rivendell is the greatest thing to every happen to higher education.  No one builds students
+            of honor like we do.  We are the greatest honors program in the history of Bloomington, MN.
+            <div class="arrow-down">
+              <%= content_tag :div, nil, class:'arrow' %>
+              <%= content_tag :div, nil, class:'arrow-border' %>
+            </div>
+          </div>
+          <div class="author">
+            <%= image_tag 'RandySims_bw1.jpg', class:'pic' %>
+            <%= content_tag :div, 'John Stonestreet', class:'name' %>
+            <%= content_tag :div, 'Summit Ministries', class:'company' %>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<div id="cta">
+  <p>Visit our location in Bloomington, Minnesota!</p>
+  <%= link_to 'Apply now', 'http://rivendell.sdcc.edu', target:'_blank' %>
+</div>
+
+<div id="clients">
+  <div id="container">
+
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Our Partners</h3>
+        <p>These are some of our partners from around the world:</p>
+        <div class="logos">
+          <%= image_tag 'SDCC-logo.png' %>
+          <%= image_tag 'WASC-logo.png' %>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
 </div>
