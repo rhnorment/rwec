@@ -4,37 +4,24 @@ class PagesController < ApplicationController
     render layout: 'landing'
   end
 
-  def mission_vision
+  def about_us
+    @body_id = 'about-us'
+    @page_title = 'Our mission & vision'
   end
 
-  def leadership
+  def products
+    @body_id = 'about-us'
+    @page_title = 'Our products'
   end
 
-  def objectives
+  def services
+    @body_id = 'about-us'
+    @page_title = 'Our services'
   end
 
-  def investors
-  end
-
-  def high_school
-  end
-
-  def college_aa
-  end
-
-  def college_ba
-  end
-
-  def curriculum
-  end
-
-  def how_it_works
-  end
-
-  def customers
-  end
-
-  def partners
+  def opportunities
+    @body_id = 'about-us'
+    @page_title = 'Grow with us'
   end
 
   def contact

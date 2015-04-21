@@ -11,52 +11,13 @@
 
   <ul class="nav navbar-nav navbar-right">
 
-    <!-- ABOUT US MENU SECTION -->
-    <li class="dropdown">
-      <%= link_to '#', class:'dropdown-toggle', data: { toggle:'dropdown' } do %>
-          About us <%= icon('angle-down') %>
-      <% end %>
-      <ul class="dropdown-menu">
-        <%= content_tag :li, link_to('Mission & Vision', about_mission_vision_path) %>
-        <%= content_tag :li, link_to('Objectives', about_objectives_path) %>
-        <%= content_tag :li, link_to('Leadership', about_leadership_path) %>
-        <%= content_tag :li, link_to('Investors', about_investors_path) %>
-      </ul>
-    </li>
+    <%= content_tag :li, link_to('About', about_path) %>
 
-    <!-- PROGRAM MENU SECTION -->
-    <li class="dropdown">
-      <%= link_to '#', class:'dropdown-toggle', data: { toggle:'dropdown' } do %>
-          Solutions <%= icon('angle-down') %>
-      <% end %>
-      <ul class="dropdown-menu">
-        <%= content_tag :li, link_to(@solution_1_name, solutions_high_school_path) %>
-        <%= content_tag :li, link_to(@solution_2_name, solutions_college_aa_path) %>
-        <%= content_tag :li, link_to(@solution_3_name, solutions_college_ba_path) %>
-      </ul>
-    </li>
+    <%= content_tag :li, link_to('Products', products_path) %>
 
-    <li class="dropdown">
-      <%= link_to '#', class:'dropdown-toggle', data: { toggle:'dropdown' } do %>
-          Products <%= icon('angle-down') %>
-      <% end %>
-      <ul class="dropdown-menu">
-        <%= content_tag :li, link_to('Curriculum', products_curriculum_path) %>
-      </ul>
+    <%= content_tag :li, link_to('Services', services_path) %>
 
-    </li>
-
-    <li class="dropdown">
-      <%= link_to '#', class:'dropdown-toggle', data: { toggle:'dropdown' } do %>
-          Opportunities <%= icon('angle-down') %>
-      <% end %>
-      <ul class="dropdown-menu">
-        <%= content_tag :li, link_to('How it works', opportunities_how_it_works_path) %>
-        <%= content_tag :li, link_to('Customers', opportunities_customers_path) %>
-        <%= content_tag :li, link_to('Partners', opportunities_partners_path) %>
-      </ul>
-
-    </li>
+    <%= content_tag :li, link_to('Opportunities', opportunities_path) %>
 
   </ul>
 

@@ -4,14 +4,30 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 
-    <head>
-        <%= render 'layouts/head' %>
-    </head>
+<head>
+  <%= render 'layouts/head' %>
+</head>
 
-    <body>
+<body id="<%= @body_id %>">
 
+<header class="navbar navbar-inverse normal" role="banner">
 
+  <div class="container">
+    <%= render 'layouts/header' %>
+  </div>
 
-    </body>
+</header>
+
+<%= yield %>
+
+<div id="footer">
+
+  <div class="container">
+    <%= render 'layouts/footer' %>
+  </div>
+
+</div>
+
+</body>
 
 </html>

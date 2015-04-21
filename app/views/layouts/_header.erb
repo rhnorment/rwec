@@ -9,36 +9,20 @@
 
 <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
 
+  <ul class="nav navbar-nav">
+
     <ul class="nav navbar-nav navbar-right">
 
-        <!-- ABOUT US MENU SECTION -->
-        <li class="dropdown">
-          <%= link_to '#', class:'dropdown-toggle', data: { toggle:'dropdown' } do %>
-            About us <%= tag :b, class:'caret' %>
-          <% end %>
-          <ul class="dropdown-menu">
-            <%= content_tag :li, link_to('Our objectives', about_objectives_path) %>
-            <%= content_tag :li, link_to('Leadership', about_leadership_path) %>
-            <%= content_tag :li, link_to('Leadership', about_investors_path) %>
-          </ul>
-        </li>
+      <%= content_tag :li, link_to('About', about_path) %>
 
-        <!-- PROGRAM MENU SECTION -->
-        <li class="dropdown">
-          <%= link_to '#', class:'dropdown-toggle', data: { toggle:'dropdown' } do %>
-              Our Program <%= tag :b, class:'caret' %>
-          <% end %>
-          <ul class="dropdown-menu">
-            <%= content_tag :li, link_to('Rivendell Program', program_path) %>
-            <%= content_tag :li, link_to('Curriculum', program_curriculum_path) %>
-            <%= content_tag :li, link_to('Locations', program_locations_path) %>
-          </ul>
-        </li>
+      <%= content_tag :li, link_to('Products', products_path) %>
 
-        <%= content_tag :li, link_to('Opportunities', opportunities_path) %>
+      <%= content_tag :li, link_to('Services', services_path) %>
 
-        <%= content_tag :li, link_to('Contact us', contact_path) %>
+      <%= content_tag :li, link_to('Opportunities', opportunities_path) %>
 
     </ul>
+
+  </ul>
 
 </nav>

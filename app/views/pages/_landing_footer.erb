@@ -2,11 +2,11 @@
 
   <div class="col-sm-3 menu">
 
-    <h3>Overview</h3>
+    <h3>Overview</h3>   <!-- TODO:  add anchors on each linked page -->
     <ul>
-      <%= content_tag :li, link_to('Leadership', about_leadership_path) %>
-      <%= content_tag :li, link_to('Investors', about_investors_path) %>
-      <%= content_tag :li, link_to('Curriculum', products_curriculum_path) %>
+      <%= content_tag :li, link_to('Leadership', about_path) %>
+      <%= content_tag :li, link_to('Investors', about_path) %>
+      <%= content_tag :li, link_to('Curriculum', products_path) %>
       <%= content_tag :li, link_to('Contact us', contact_path) %>
     </ul>
 
@@ -16,10 +16,10 @@
 
     <h3>Menu</h3>
     <ul>
-      <%= content_tag :li, link_to('About', about_mission_vision_path) %>
-      <%= content_tag :li, link_to('Solutions', solutions_college_aa_path) %>
-      <%= content_tag :li, link_to('Products', products_curriculum_path) %>
-      <%= content_tag :li, link_to('Opportunities', opportunities_how_it_works_path) %>
+      <%= content_tag :li, link_to('About', about_path) %>
+      <%= content_tag :li, link_to('Products', products_path) %>
+      <%= content_tag :li, link_to('Services', services_path) %>
+      <%= content_tag :li, link_to('Opportunities', opportunities_path) %>
     </ul>
 
   </div>
