@@ -21,7 +21,4 @@ class PagesController < ApplicationController
   def opportunities
   end
 
-  def contact
-  end
-
 end

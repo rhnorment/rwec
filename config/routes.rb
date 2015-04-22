@@ -2,20 +2,22 @@ Rails.application.routes.draw do
 
   root      'pages#coming_soon'
 
-  get       '/',                to:     'pages#home'
+  get       '/',                to: 'pages#home'
 
-  get       '/about',           to:     'pages#about_us'
+  get       '/about',           to: 'pages#about_us'
 
-  get       '/products',        to:     'pages#products'
+  get       '/products',        to: 'pages#products'
 
-  get       '/services',        to:     'pages#services'
+  get       '/services',        to: 'pages#services'
 
-  get       '/opportunities',   to:     'pages#opportunities'
+  get       '/opportunities',   to: 'pages#opportunities'
 
-  get       '/contact',         to:     'pages#contact'
+  get       '/contact',         to: 'pages#contact'
 
-  get       '/404',             to:     'errors#not_found'
-  get       '/422',             to:     'errors#unprocessable'
-  get       '/500',             to:     'errors#server_error'
+  resources :contacts,          only: [:new, :create]
+
+  get       '/404',             to: 'errors#not_found'
+  get       '/422',             to: 'errors#unprocessable'
+  get       '/500',             to: 'errors#server_error'
 
 end
