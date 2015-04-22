@@ -5,6 +5,10 @@
 $ ->
   slideshow.initialize()
 
+  $('.flexslider').flexslider
+    directionNav: false
+    slideshowSpeed: 4000
+
 # slideshow code
 slideshow = initialize: ->
   $slideshow = $('.slideshow')
@@ -46,5 +50,7 @@ slideshow = initialize: ->
   ), ->
     $btnPrev.removeClass 'active'
     $btnNext.removeClass 'active'
+
+$('.flexslider').flexslider
 
 

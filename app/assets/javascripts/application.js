@@ -15,5 +15,6 @@
 //= require jquery.turbolinks
 //= require bootstrap-sprockets
 //= require holder
+//= require jquery.flexslider.min
 //= require turbolinks
 
