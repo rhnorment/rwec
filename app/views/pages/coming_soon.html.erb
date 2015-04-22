@@ -1,0 +1,52 @@
+<div class="container">
+
+  <div class="row info">
+    <div class="col-md-12">
+      <%= content_tag :h1, link_to('Rivendell Education Company', '#') %>
+      <h3>We're launching very soon.</h3>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <div id="countdown">
+        <%= content_tag :div, nil, id:'clock' %>
+      </div>
+    </div>
+  </div>
+
+  <div class="row social">
+    <div class="col-md-12">
+      <%= link_to 'https://www.facebook.com/rivendellsanctuary?fref=ts' do %>
+          <%= icon('facebook-official', nil, class:'fa-4x') %>
+          <%= content_tag :div, 'Check us out on Facebook', class:'tm' %>
+      <% end %>
+    </div>
+  </div>
+
+</div>
+
+<%= javascript_tag do %>
+
+    $(function () {
+
+    var clock;
+
+    // Grab the current date
+    var currentDate = new Date();
+
+    // Set some date in the future. In this case, it's always Jan 1
+    var futureDate  = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate(), currentDate.getHours() + 20);
+
+    // Calculate the difference in seconds between the future and current date
+    var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+    // Instantiate a coutdown FlipClock
+    clock = $('#clock').FlipClock(diff, {
+    countdown: true
+    });
+
+
+    });
+
+<% end %>

@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-  root      'pages#home'
+  root      'pages#coming_soon'
+
+  get       '/',                to:     'pages#home'
 
   get       '/about',           to:     'pages#about_us'
 

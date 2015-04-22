@@ -14,6 +14,9 @@
 //= require jquery_ujs
 //= require jquery.turbolinks
 //= require bootstrap-sprockets
+//= require flipclock/libs/base
+//= require flipclock/flipclock
+//= require flipclock/faces/hourlycounter
 //= require holder
 //= require jquery.flexslider.min
 //= require turbolinks
