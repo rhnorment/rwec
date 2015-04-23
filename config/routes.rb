@@ -12,8 +12,6 @@ Rails.application.routes.draw do
 
   get       '/opportunities',   to: 'pages#opportunities'
 
-  get       '/contact',         to: 'pages#contact'
-
   resources :contacts,          only: [:new, :create]
 
   get       '/404',             to: 'errors#not_found'
