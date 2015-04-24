@@ -9,7 +9,7 @@
     <div class="row">
       <div class="col-md-12 tabs-wrapper">
 
-        <ul class="tabs nav-tabs">
+        <ul class="nav nav-tabs">
           <%= content_tag :li, link_to('Associate of Arts Degree', '#aa', data: { toggle:'tab' }), class:'active' %>
           <%= content_tag :li, link_to('Associate of Arts Degree (High School)', '#aa-hs', data: { toggle:'tab' }) %>
           <%= content_tag :li, link_to('Bachelor of Arts Degree', '#ba', data: { toggle:'tab' }) %>
@@ -30,7 +30,7 @@
               </p>
             </div>
             <div class="col-md-6 image">
-              <%= image_tag 'tabs/pic1.png', class:'img-responsive' %>
+              <%= holder_tag '359x322', 'AA college image', class:'img-responsive' %>
             </div>
           </div>
 
