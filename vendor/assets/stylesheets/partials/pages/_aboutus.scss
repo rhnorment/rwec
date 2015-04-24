@@ -180,21 +180,8 @@
 			}
 		}
 	}
-
 }
 
-@include keyFrame(fadeInTooltip) {
-	0% {
-		opacity: 0;
-		filter: alpha(opacity=0);
-		-webkit-transform: translateY(0px);
-	}
 
-	100% {
-		opacity: 1;
-		filter: alpha(opacity=100);
-		-webkit-transform: translateY(-10px);
-	}
-}
 
 

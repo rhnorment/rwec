@@ -5,7 +5,7 @@ describe 'main navigation menu' do
   context 'when using the landing layout' do
 
     it 'the landing page contains links to the web pages' do
-      visit root_url
+      visit home_url
 
       within('.nav') do
         expect(page).to have_link('About')
@@ -32,7 +32,7 @@ describe 'main navigation menu' do
     end
 
     it 'provides access to the appropriate internal pages' do
-      visit root_url
+      visit home_url
 
       within('.nav') do
 
@@ -49,7 +49,7 @@ describe 'main navigation menu' do
         expect(current_path).to eq(opportunities_path)
       end
 
-      visit root_url
+      visit home_url
 
       within('#footer-white') do
         click_link('Leadership')
@@ -59,7 +59,7 @@ describe 'main navigation menu' do
         expect(current_path).to eq(products_path)
 
         click_link('Contact us')
-        expect(current_path).to eq(contact_path)
+        expect(current_path).to eq(new_contact_path)
 
         click_link('About')
         expect(current_path).to eq(about_path)
@@ -77,7 +77,7 @@ describe 'main navigation menu' do
 
   end
 
-  context 'when using the applicaton layout' do
+  context 'when using the application layout' do
 
     it 'any page contains links to the web pages' do
       visit about_url
@@ -127,7 +127,7 @@ describe 'main navigation menu' do
         expect(current_path).to eq(opportunities_path)
 
         click_link('Contact us')
-        expect(current_path).to eq(contact_path)
+        expect(current_path).to eq(new_contact_path)
       end
     end
 

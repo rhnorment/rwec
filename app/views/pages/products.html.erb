@@ -1,0 +1,87 @@
+<div id="tabs">
+  <div class="container">
+
+    <div class="row header">
+      <h3>Rivendell solutions for your community</h3>
+      <p>We have solutions that will revolutionize the primary and higher education systems in your community.</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 tabs-wrapper">
+
+        <ul class="tabs nav-tabs">
+          <%= content_tag :li, link_to('Associate of Arts Degree', '#aa', data: { toggle:'tab' }), class:'active' %>
+          <%= content_tag :li, link_to('Associate of Arts Degree (High School)', '#aa-hs', data: { toggle:'tab' }) %>
+          <%= content_tag :li, link_to('Bachelor of Arts Degree', '#ba', data: { toggle:'tab' }) %>
+        </ul>
+
+        <div class="tab-content">
+
+          <div class="tab-pane fade in active" id="aa">
+            <div class="col-md-6 info">
+              <h4>You don't need to have any advanced technical</h4>
+              <p>
+                Whether you want to fill this paragraph with some text like I'm doing right now, this place is perfect to describe some
+                features or anything you want - React has a complete solution for you.
+              </p>
+              <p>
+                You have complete control over the look & feel of your website, we offer the best quality so you take your site up
+                and running in no time.
+              </p>
+            </div>
+            <div class="col-md-6 image">
+              <%= image_tag 'tabs/pic1.png', class:'img-responsive' %>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="aa-hs">
+            <div class="col-md-6 image">
+              <%= holder_tag '359x322', 'AA high school image', class:'img-responsive' %>
+            </div>
+            <div class="col-md-6 info">
+              <h4>You don't need to have any advanced technical</h4>
+              <p>
+                Whether you want to fill this paragraph with some text like I'm doing right now, this place is perfect to describe
+                some features or anything you want - React has a complete solution for you.
+              </p>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="ba">
+            <div class="col-md-6 info">
+              <h4>You don't need to have any advanced technical</h4>
+              <p>
+                Whether you want to fill this paragraph with some text like I'm doing right now, this place is perfect to
+                describe some features or anything you want - React has a complete solution for you.
+              </p>
+              <p>
+                You have complete control over the look & feel of your website, we offer the best quality so you take your site
+                up and running in no time.
+              </p>
+            </div>
+            <div class="col-md-6 image">
+              <%= holder_tag '359x322', 'BA image', class:'img-responsive' %>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="first-option">
+  <div class="container">
+
+    <div class="row header">
+      <div class="col-md-12">
+        <h2>Transform your community</h2>
+        <p>Rivendell education programs are the ideal solution for transforming your community.</p>
+      </div>
+    </div>
+
+
+  </div>
+</div>

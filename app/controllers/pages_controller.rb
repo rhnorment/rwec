@@ -13,6 +13,7 @@ class PagesController < ApplicationController
   end
 
   def products
+    @body_id = 'features'
   end
 
   def services
