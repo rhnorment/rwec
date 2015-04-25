@@ -19,14 +19,12 @@
 
           <div class="tab-pane fade in active" id="aa">
             <div class="col-md-6 info">
-              <h4>You don't need to have any advanced technical</h4>
+              <h4>Header for the Rivendell Sanctuary model</h4>
               <p>
-                Whether you want to fill this paragraph with some text like I'm doing right now, this place is perfect to describe some
-                features or anything you want - React has a complete solution for you.
+                Need around 40 words about the Rivendell Sanctuary model.  What sets it apart for a community?
               </p>
               <p>
-                You have complete control over the look & feel of your website, we offer the best quality so you take your site up
-                and running in no time.
+                Need another 40 words or so about the Sanctuary model.  How will it benefit a community?
               </p>
             </div>
             <div class="col-md-6 image">
@@ -39,24 +37,21 @@
               <%= holder_tag '359x322', 'AA high school image', class:'img-responsive' %>
             </div>
             <div class="col-md-6 info">
-              <h4>You don't need to have any advanced technical</h4>
+              <h4>Header for the High School Model</h4>
               <p>
-                Whether you want to fill this paragraph with some text like I'm doing right now, this place is perfect to describe
-                some features or anything you want - React has a complete solution for you.
+                Need about 40 words on why the High School model is so cool!
               </p>
             </div>
           </div>
 
           <div class="tab-pane fade" id="ba">
             <div class="col-md-6 info">
-              <h4>You don't need to have any advanced technical</h4>
+              <h4>Bachelor Degree</h4>
               <p>
-                Whether you want to fill this paragraph with some text like I'm doing right now, this place is perfect to
-                describe some features or anything you want - React has a complete solution for you.
+               Need about 40 words on the BA.  What sets it apart?
               </p>
               <p>
-                You have complete control over the look & feel of your website, we offer the best quality so you take your site
-                up and running in no time.
+                Need another 40 words or so on the BA.  How will it help a community?
               </p>
             </div>
             <div class="col-md-6 image">
@@ -72,16 +67,74 @@
   </div>
 </div>
 
-<div id="first-option">
+<div id="second-option">
   <div class="container">
 
-    <div class="row header">
-      <div class="col-md-12">
-        <h2>Transform your community</h2>
-        <p>Rivendell education programs are the ideal solution for transforming your community.</p>
+    <div class="row">
+      <div class="col-md-4 feature">
+        <%= image_tag 'circle-icons/one-color/anchor.png' %>
+        <strong>Feature 1</strong>
+        <p>Need about 20 words for feature 1.</p>
+      </div>
+      <div class="col-md-4 feature">
+        <%= image_tag 'circle-icons/one-color/anchor.png' %>
+        <strong>Feature 2</strong>
+        <p>Need about 20 words for feature 2.</p>
+      </div>
+      <div class="col-md-4 feature">
+        <%= image_tag 'circle-icons/one-color/anchor.png' %>
+        <strong>Feature 3</strong>
+        <p>Need about 20 words for feature 3.</p>
       </div>
     </div>
 
+    <div class="row">
+      <div class="col-md-4 feature">
+        <%= image_tag 'circle-icons/one-color/anchor.png' %>
+        <strong>Feature 4</strong>
+        <p>Need about 20 words for feature 4.</p>
+      </div>
+      <div class="col-md-4 feature">
+        <%= image_tag 'circle-icons/one-color/anchor.png' %>
+        <strong>Feature 5</strong>
+        <p>Need about 20 words for feature 5.</p>
+      </div>
+      <div class="col-md-4 feature">
+        <%= image_tag 'circle-icons/one-color/anchor.png' %>
+        <strong>Feature 6</strong>
+        <p>Need about 20 words for feature 3.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="showcase">
+  <div class="container">
+
+    <div class="row header">
+      <h3>Showcasing some Rivendell locations</h3>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 pics">
+
+        <%= link_to 'https://rivnendell.sdcc.edu', class:'pic' do %>
+            <%= holder_tag '250x268', 'Bloomington campus photo' %>
+            <div class="bg">
+              <p>Bloomington, Minnesota</p>
+            </div>
+        <% end %>
+
+        <%= link_to '#', class:'pic' do %>
+            <%= holder_tag '250x268', 'Sterling campus photo' %>
+            <div class="bg">
+              <p>Sterling Campus, Singapore</p>
+            </div>
+        <% end %>
+
+      </div>
+    </div>
 
   </div>
 </div>
