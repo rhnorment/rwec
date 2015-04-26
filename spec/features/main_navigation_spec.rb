@@ -12,6 +12,7 @@ describe 'main navigation menu' do
         expect(page).to have_link('Products')
         expect(page).to have_link('Services')
         expect(page).to have_link('Opportunities')
+        expect(page).to have_link('Contact')
       end
 
       within('#footer-white') do
@@ -47,6 +48,9 @@ describe 'main navigation menu' do
 
         click_link('Opportunities')
         expect(current_path).to eq(opportunities_path)
+
+        click_link('Contact')
+        expect(current_path).to eq(new_contact_path)
       end
 
       visit home_url
@@ -87,6 +91,7 @@ describe 'main navigation menu' do
         expect(page).to have_link('Products')
         expect(page).to have_link('Services')
         expect(page).to have_link('Opportunities')
+        expect(page).to have_link('Contact')
       end
 
       within('#footer') do
@@ -112,6 +117,9 @@ describe 'main navigation menu' do
 
         click_link('Opportunities')
         expect(current_path).to eq(opportunities_path)
+
+        click_link('Contact')
+        expect(current_path).to eq(new_contact_path)
       end
 
       visit about_url
