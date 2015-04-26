@@ -4,6 +4,7 @@
 
 $ ->
   slideshow.initialize()
+  services.initialize()
 
   $('.flexslider').flexslider
     directionNav: false
@@ -53,6 +54,20 @@ slideshow = initialize: ->
     $btnPrev.removeClass 'active'
     $btnNext.removeClass 'active'
 
-$('.flexslider').flexslider
+# code for services page:
+services =
+  tabs: ->
+    $tabs = $('#services #tabs')
+    $hexagons = $tabs.find('.hexagon')
+    $sections = $tabs.find('.section')
 
+    $hexagons.click ->
+      $hexagons.removeClass 'active'
+      $(this).addClass 'active'
+      index = $hexagons.index(this)
+      $sections.fadeOut()
+      $sections.eq(index).fadeIn()
+
+  initialize: ->
+    @tabs()
 

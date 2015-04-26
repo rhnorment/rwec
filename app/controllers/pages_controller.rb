@@ -17,6 +17,7 @@ class PagesController < ApplicationController
   end
 
   def services
+    @body_id = 'services'
   end
 
   def opportunities
