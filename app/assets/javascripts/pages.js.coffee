@@ -68,6 +68,18 @@ services =
       $sections.fadeOut()
       $sections.eq(index).fadeIn()
 
+  screenHover: ->
+    $screens = $('#features-hover .images img')
+    $features = $('#features-hover .features .feature')
+    $features.mouseenter ->
+      if (!$(this).hasClass('active'))
+        $features.removeClass('active')
+        $(this).addClass('active')
+        index = $features.index(this)
+        $screens.stop().fadeOut()
+        $screens.eq(index).fadeIn()
+
   initialize: ->
     @tabs()
+    @screenHover()
 
