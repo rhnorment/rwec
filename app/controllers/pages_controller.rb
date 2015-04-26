@@ -21,6 +21,7 @@ class PagesController < ApplicationController
   end
 
   def opportunities
+    @body_id = 'portfolio'
   end
 
 end
